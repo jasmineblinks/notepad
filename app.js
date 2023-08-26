@@ -1,4 +1,4 @@
-const notesContainer=document.querySelector(".notes-container");
+const notesContainer = document.querySelector(".notes-container");
 const createBtn =document.querySelector(".btn");
 let notes = document.querySelectorAll(".input-box")
 
@@ -21,7 +21,7 @@ createBtn.addEventListener("click",()=>{
 })
 
 notesContainer.addEventListener("click",function(e){
-    if(e.target.tagName === "IMG"){
+    if(e.target.tagName === "img"){
         e.target.parentElement.remove();
         updateStorage()
     }else if (e.target.tagName === "p"){
